@@ -1,0 +1,37 @@
+.weather
+    .foerecast__block
+        p.forecast__city-name|Название города
+        .forecast__now
+            .forecast__temp-wrap
+                p.city-temp-now.weather__day.now|Темрература
+                p.city-feels_like.weather__day.now|Чувствуется как
+                p.city-temp_min.weather__day.now|Минимальная температура
+                p.city-temp_max.weather__day.now|Максимальная температура
+            .forecast__description
+                .wrap__for-icon
+                    .weather-picture
+                    p.city-description.weather__day.now|Описание погоды
+                p.city-pressure.weather__day.now|Атмосферное давление на уровне моря гПа
+                p.city-humidity.weather__day.now|Влажность %
+                p.city-clouds.weather__day.now|Облачность %
+                p.city-wind.weather__day.now|Скорость ветра м/с
+                p.city-rain.weather__day.now|Осадки за последние 3 часа мм
+            .forecast__additionally
+                p.time-sunrise.weather__day.now|Восход
+                p.time-sunset.weather__day.now|Заход
+
+            
+        .input__wrap.select__wrap
+            .input-city__wrap
+                form
+                    input(class="input-city" type="text" name="input-city" title="Введите название города" placeholder="Enter you city")
+                    .btn__wrap
+                        button(title="Показать").btn__weather|GO
+        .select__wrap
+            select.select__country.select
+                option(value="default")|Выберите страну
+            select.select__city.select
+                option(value="default")|Выберите город
+
+        .forecast__out
+            .forecast-all

@@ -1,0 +1,20 @@
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    background: rgba(169, 169, 169, 0.5);
+}
+
+.header__fonts{
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    background: #2d3e6d;
+    border-radius: 6px;
+    margin: 5px 10px;
+}

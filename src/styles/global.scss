@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    
+    // font-family: 'Audiowide', cursive !important;
+    // font-family: 'Audiowide', cursive;
+}
+  
+.body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #8c9eff;
+  
+    &__wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url('../img/photo-6.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  
+      &::before{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #607d8b;
+          opacity: 0.7;
+      }
+    }
+}
+  
+  
+a {
+    text-decoration: none;
+}
+  
+button, select{
+    cursor: pointer;
+}
+
+input{
+    padding: 0;
+}

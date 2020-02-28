@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>iOld Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Courgette|Orbitron:400,500,600,700,800,900&amp;display=swap&amp;subset=latin-ext" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+  </head>
+  <body class="body">
+    <div class="body__wrap">
+      <header class="header">
+        <p class="site__name header__fonts">iOld Weather</p>
+        <p class="out-date header__fonts"></p>
+      </header>
+      <div class="weather">
+        <div class="foerecast__block">
+          <p class="forecast__city-name">Название города</p>
+          <div class="forecast__now">
+            <div class="forecast__temp-wrap">
+              <p class="city-temp-now weather__day now">Темрература</p>
+              <p class="city-feels_like weather__day now">Чувствуется как</p>
+              <p class="city-temp_min weather__day now">Минимальная температура</p>
+              <p class="city-temp_max weather__day now">Максимальная температура</p>
+            </div>
+            <div class="forecast__description">
+              <div class="wrap__for-icon">
+                <div class="weather-picture"></div>
+                <p class="city-description weather__day now">Описание погоды</p>
+              </div>
+              <p class="city-pressure weather__day now">Атмосферное давление на уровне моря гПа</p>
+              <p class="city-humidity weather__day now">Влажность %</p>
+              <p class="city-clouds weather__day now">Облачность %</p>
+              <p class="city-wind weather__day now">Скорость ветра м/с</p>
+              <p class="city-rain weather__day now">Осадки за последние 3 часа мм</p>
+            </div>
+            <div class="forecast__additionally">
+              <p class="time-sunrise weather__day now">Восход</p>
+              <p class="time-sunset weather__day now">Заход</p>
+            </div>
+          </div>
+          <div class="input__wrap select__wrap">
+            <div class="input-city__wrap">
+              <form>
+                <input class="input-city" type="text" name="input-city" title="Введите название города" placeholder="Enter you city"/>
+                <div class="btn__wrap">
+                  <button class="btn__weather" title="Показать">GO</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="select__wrap">
+            <select class="select__country select">
+              <option value="default">Выберите страну</option>
+            </select>
+            <select class="select__city select">
+              <option value="default">Выберите город</option>
+            </select>
+          </div>
+          <div class="forecast__out">
+            <div class="forecast-all"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
